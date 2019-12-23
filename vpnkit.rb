@@ -32,6 +32,5 @@ class Vpnkit < Formula
 
   test do
     assert_match(version.to_s, shell_output("#{bin}/vpnkit --version 2>&1"))
-    system "make", "test"
   end
 end
