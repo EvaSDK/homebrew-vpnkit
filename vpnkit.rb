@@ -7,6 +7,12 @@ class Vpnkit < Formula
 
   version "ea9dbeaf887f5dad8391f4a34d127501fb6bbf64"
 
+  bottle do
+    root_url "https://github.com/bensallen/homebrew-vpnkit/releases/download/ea9dbea/"
+    cellar :any_skip_relocation
+    sha256 "785015eb38f16927674e24aac7fa3565eec753c145687c918ec45c4a1c8b276b" => :mojave
+  end
+
   depends_on :x11 => :build
   depends_on :xcode => ["9.0", :build]
   depends_on "aspcud" => :build
