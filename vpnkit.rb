@@ -26,7 +26,7 @@ class Vpnkit < Formula
     ENV["OPAMVERBOSE"] = "1"
     
     system "make"
-    system "mv", "vpnkit.exe", "vpnkit"
+    File.rename("vpnkit.exe", "vpnkit")
     bin.install "vpnkit"
   end
 
