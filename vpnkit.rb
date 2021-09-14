@@ -20,7 +20,6 @@ class Vpnkit < Formula
   depends_on "https://gist.githubusercontent.com/djs55/7a94ee5aeb882ef5399c0485d2affdda/raw/bc04ff96e0082d7ee07642337dbb77c51b93d678/opam.rb" => :build
   depends_on "ocaml" => :build
   depends_on "pkg-config" => :build
-  depends_on x11: :build
   depends_on xcode: ["9.0", :build]
   # VPNKit requires an older version of OPAM, use the project's formula for 1.2.2_4.
   # The project is using this as part of their CircleCI.
